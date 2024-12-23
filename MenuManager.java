@@ -14,7 +14,7 @@ public class MenuManager {
             System.out.println("4. 查詢品項");
             System.out.println("5. 顯示菜單");
             System.out.println("6. 退出");
-            System.out.print("選擇一個選項: ");
+            System.out.print("選擇一個選項（請使用數字選擇）: ");
             int choice = scanner.nextInt();
             scanner.nextLine(); // Consume newline
 
@@ -60,6 +60,7 @@ public class MenuManager {
                     menu.displayMenu();
                     break;
                 case 6:
+                    System.out.println("已成功退出(請注意資料不會被保存)");
                     exit = true;
                     break;
                 default:
